@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <div id="progress-bar"></div>
+
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-logo">JAA</span>
@@ -31,21 +34,44 @@
   <section id="hero">
     <canvas id="neural-canvas"></canvas>
     <div class="hero-content">
-      <div class="hero-photo-wrapper">
-        <img src="profile.jpeg" alt="James Anto Arnold J" class="hero-photo" />
+      <div class="hero-left">
+        <div class="availability-badge">
+          <span class="availability-dot"></span>
+          Open to new opportunities
+        </div>
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">James Anto Arnold J</h1>
+        <p class="hero-title">
+          <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-summary">
+          Data Scientist with 5 years of experience specialising in AI-driven solutions,
+          Machine Learning, and Data Engineering. Based in London, UK.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">View My Work</a>
+          <a href="James_Anto_Arnold_CV.pdf" class="btn btn-secondary" download>&#8595; Download CV</a>
+          <a href="https://www.linkedin.com/in/jamesantoarnold/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        </div>
       </div>
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">James Anto Arnold J</h1>
-      <p class="hero-title">
-        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
-      </p>
-      <p class="hero-summary">
-        Data Scientist with 5 years of experience specialising in AI-driven solutions,
-        Machine Learning, and Data Engineering. Based in London, UK.
-      </p>
-      <div class="hero-cta">
-        <a href="#experience" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <div class="hero-right">
+        <div class="hero-photo-wrapper">
+          <img src="profile.jpeg" alt="James Anto Arnold J" class="hero-photo" />
+        </div>
+        <div class="hero-quick-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">5+</span>
+            <span class="hero-stat-lbl">Years Exp</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">4</span>
+            <span class="hero-stat-lbl">Companies</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">MSc</span>
+            <span class="hero-stat-lbl">Data Science</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -53,7 +79,7 @@
   <!-- About -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title"><span class="section-num">01 —</span> About Me</h2>
       <div class="about-grid">
         <div class="about-text">
           <p>
@@ -99,7 +125,7 @@
   <!-- Skills -->
   <section id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title"><span class="section-num">02 —</span> Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <h3>Languages</h3>
@@ -168,7 +194,7 @@
   <!-- Experience -->
   <section id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title"><span class="section-num">03 —</span> Experience</h2>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -293,7 +319,7 @@
   <!-- Education -->
   <section id="education">
     <div class="container">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title"><span class="section-num">04 —</span> Education</h2>
       <div class="education-grid">
         <div class="edu-card">
           <div class="edu-icon">🎓</div>
@@ -322,7 +348,7 @@
   <!-- Recommendations -->
   <section id="recommendations">
     <div class="container">
-      <h2 class="section-title">Recommendations</h2>
+      <h2 class="section-title"><span class="section-num">05 —</span> Recommendations</h2>
       <p class="rec-intro">What colleagues and managers say on LinkedIn.</p>
       <div class="rec-grid">
 
@@ -398,7 +424,7 @@
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
+      <h2 class="section-title"><span class="section-num">06 —</span> Get In Touch</h2>
       <p class="contact-intro">
         I'm always open to discussing new opportunities, interesting projects, or just a chat about AI and data.
       </p>
@@ -426,6 +452,7 @@
     <p>© 2026 James Anto Arnold J · Built with HTML, CSS & JavaScript</p>
   </footer>
 
+  <button id="back-to-top" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

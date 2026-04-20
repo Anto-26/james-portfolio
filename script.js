@@ -5,8 +5,8 @@
 
   const NODE_COUNT = 52;
   const CONNECTION_DIST = 180;
-  const NODE_COLOR = 'rgba(29, 78, 216, VAL)';
-  const LINE_COLOR = 'rgba(29, 78, 216, VAL)';
+  const NODE_COLOR = 'rgba(82, 82, 91, VAL)';
+  const LINE_COLOR = 'rgba(82, 82, 91, VAL)';
 
   let nodes = [];
 
@@ -32,14 +32,13 @@
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw connections
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const dx = nodes[i].x - nodes[j].x;
         const dy = nodes[i].y - nodes[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < CONNECTION_DIST) {
-          const alpha = (1 - dist / CONNECTION_DIST) * 0.18;
+          const alpha = (1 - dist / CONNECTION_DIST) * 0.14;
           ctx.beginPath();
           ctx.strokeStyle = LINE_COLOR.replace('VAL', alpha);
           ctx.lineWidth = 1;
@@ -50,17 +49,15 @@
       }
     }
 
-    // Draw nodes
     nodes.forEach(n => {
       n.pulse += 0.02;
-      const alpha = 0.25 + Math.sin(n.pulse) * 0.15;
+      const alpha = 0.2 + Math.sin(n.pulse) * 0.12;
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
       ctx.fillStyle = NODE_COLOR.replace('VAL', alpha);
       ctx.fill();
     });
 
-    // Move nodes
     nodes.forEach(n => {
       n.x += n.vx;
       n.y += n.vy;
@@ -77,10 +74,27 @@
   window.addEventListener('resize', () => { resize(); init(); });
 })();
 
+// Scroll progress bar
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = ((scrollTop / docHeight) * 100) + '%';
+});
+
 // Navbar scroll shadow
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Back to top
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 500);
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // Mobile hamburger
