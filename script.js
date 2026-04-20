@@ -97,7 +97,7 @@ navLinks.querySelectorAll('a').forEach(a => {
 const roles = [
   'Data Scientist',
   'ML Engineer',
-  'LLM Developer',
+  'AI Developer',
   'Gen AI Engineer'
 ];
 let roleIndex = 0;
