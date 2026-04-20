@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Anto Arnold J — Data Scientist</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">JAA</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-photo-wrapper">
+        <img src="profile.jpeg" alt="James Anto Arnold J" class="hero-photo" />
+      </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">James Anto Arnold J</h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-summary">
+        Data Scientist with 5 years of experience specialising in AI-driven solutions,
+        Machine Learning, and Data Engineering. Based in London, UK.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Data Scientist passionate about building intelligent systems that turn raw data into
+            meaningful insights. With hands-on experience across the full ML lifecycle — from data
+            engineering to production deployment — I thrive at the intersection of AI research and
+            practical business impact.
+          </p>
+          <p>
+            My recent work focuses on <strong>LLM-powered applications</strong>, <strong>RAG systems</strong>,
+            and <strong>NLP pipelines</strong>. I've helped organisations improve decision-making by
+            building scalable, trustworthy AI solutions that reduce hallucinations and deliver
+            actionable insights to senior stakeholders.
+          </p>
+          <p>
+            Before specialising in AI/ML, I built a strong foundation in Data Engineering at
+            Accenture and TCS, working with enterprise ETL pipelines, big data tools, and cloud
+            platforms at scale.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Cloud Platforms</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">MSc</span>
+            <span class="stat-label">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>AI / ML</h3>
+          <div class="skill-tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">Vector Databases</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Classification</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Data Engineering</h3>
+          <div class="skill-tags">
+            <span class="tag">PySpark</span>
+            <span class="tag">Databricks</span>
+            <span class="tag">Azure Data Factory</span>
+            <span class="tag">Informatica PowerCenter</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">SageMaker</span>
+            <span class="tag">Lambda</span>
+            <span class="tag">EC2</span>
+            <span class="tag">GCP</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases & BI</h3>
+          <div class="skill-tags">
+            <span class="tag">Oracle</span>
+            <span class="tag">BigQuery</span>
+            <span class="tag">Tableau</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Competencies</h3>
+          <div class="skill-tags">
+            <span class="tag">Statistical Modelling</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Model Deployment</span>
+            <span class="tag">Data Governance</span>
+            <span class="tag">Stakeholder Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Data Scientist</h3>
+                <p class="company">WorkL</p>
+              </div>
+              <div class="card-meta">
+                <span class="date">Sep 2025 – Present</span>
+                <span class="location">London, UK</span>
+              </div>
+            </div>
+            <p class="card-summary">Building LLM-powered analytics and RAG solutions using LangChain to extract actionable insights from employee feedback, improving insight efficiency by <strong>25%</strong> and response accuracy by <strong>20%</strong>.</p>
+            <div class="card-tags">
+              <span class="tag tag-sm">LangChain</span>
+              <span class="tag tag-sm">RAG</span>
+              <span class="tag tag-sm">LLMs</span>
+              <span class="tag tag-sm">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Data Analyst <span class="role-badge">Industrial Placement</span></h3>
+                <p class="company">WorkL</p>
+              </div>
+              <div class="card-meta">
+                <span class="date">Jul 2024 – Sep 2025</span>
+                <span class="location">London, UK</span>
+              </div>
+            </div>
+            <p class="card-summary">Analysed survey and free-text data using Python NLP techniques to surface performance trends, and built Tableau dashboards to deliver standardised monthly insights to leadership.</p>
+            <div class="card-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">Tableau</span>
+              <span class="tag tag-sm">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Freelance Computer Science Researcher</h3>
+                <p class="company">D2 Legal Technology</p>
+              </div>
+              <div class="card-meta">
+                <span class="date">Mar 2024 – Sep 2025</span>
+                <span class="location">London, UK</span>
+              </div>
+            </div>
+            <p class="card-summary">Researched and built a RAG-based legal chatbot with a full semantic retrieval pipeline (chunking, Sentence Transformers, FAISS), benchmarking LLMs including Gemma, Qwen, and Mistral against BERTScore, BLEU, and ROUGE metrics.</p>
+            <div class="card-tags">
+              <span class="tag tag-sm">RAG</span>
+              <span class="tag tag-sm">FAISS</span>
+              <span class="tag tag-sm">LLM Evaluation</span>
+              <span class="tag tag-sm">Sentence Transformers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Big Data Engineer</h3>
+                <p class="company">Tata Consultancy Services</p>
+              </div>
+              <div class="card-meta">
+                <span class="date">May 2022 – Aug 2023</span>
+                <span class="location">Bengaluru, India</span>
+              </div>
+            </div>
+            <p class="card-summary">Built optimised PySpark pipelines in Databricks and scalable Azure Data Factory workflows for financial data processing, cutting manual ingestion effort by <strong>50%</strong> with GitHub Actions CI/CD automation.</p>
+            <div class="card-tags">
+              <span class="tag tag-sm">PySpark</span>
+              <span class="tag tag-sm">Databricks</span>
+              <span class="tag tag-sm">Azure Data Factory</span>
+              <span class="tag tag-sm">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Data Engineer</h3>
+                <p class="company">Accenture</p>
+              </div>
+              <div class="card-meta">
+                <span class="date">Jul 2019 – Apr 2022</span>
+                <span class="location">Chennai, India</span>
+              </div>
+            </div>
+            <p class="card-summary">Designed enterprise ETL pipelines with Informatica PowerCenter, led Data Vault warehouse implementation for regulatory compliance, and optimised Oracle SQL performance by up to <strong>40%</strong> through query rewrites and automated Python monitoring.</p>
+            <div class="card-tags">
+              <span class="tag tag-sm">Informatica</span>
+              <span class="tag tag-sm">Oracle SQL</span>
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">ETL</span>
+              <span class="tag tag-sm">Data Vault</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <h3>MSc Data Science</h3>
+            <p class="edu-sub">with Professional Postgraduate Year</p>
+            <p class="edu-school">University of Surrey</p>
+            <p class="edu-location">Surrey, UK</p>
+            <span class="edu-date">Sep 2023 – Sep 2025</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏛️</div>
+          <div class="edu-details">
+            <h3>BTech Information Technology</h3>
+            <p class="edu-sub">&nbsp;</p>
+            <p class="edu-school">Anna University</p>
+            <p class="edu-location">Chennai, India</p>
+            <span class="edu-date">Jun 2015 – Apr 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">
+        I'm always open to discussing new opportunities, interesting projects, or just a chat about AI and data.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:jamesantoarnold@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">jamesantoarnold@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jamesantoarnold/" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">jamesantoarnoldj</span>
+        </a>
+        <a href="tel:+447393264972" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+44 7393 264972</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 James Anto Arnold J · Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
