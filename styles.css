@@ -631,6 +631,94 @@ section:nth-of-type(even) { background: var(--bg2); }
   border-radius: 4px;
 }
 
+/* ── Speaking ─────────────────────────────────────── */
+.speaking-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s;
+}
+.speaking-card:hover { box-shadow: var(--shadow-lg); }
+
+.speaking-img-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 16/9;
+}
+.speaking-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.speaking-img-wrapper:hover .speaking-img { transform: scale(1.03); }
+
+.speaking-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.speaking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+.speaking-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.speaking-subtitle {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent3);
+  margin-top: -0.4rem;
+}
+.speaking-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.speaking-meta span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.speaking-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.speaking-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+@media (max-width: 768px) {
+  .speaking-card {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.75rem;
+  }
+}
+
 /* ── Recommendations ─────────────────────────────── */
 .rec-intro {
   color: var(--text-muted);
