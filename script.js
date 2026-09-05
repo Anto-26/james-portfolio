@@ -5,8 +5,8 @@
 
   const NODE_COUNT = 52;
   const CONNECTION_DIST = 180;
-  const NODE_COLOR = 'rgba(82, 82, 91, VAL)';
-  const LINE_COLOR = 'rgba(82, 82, 91, VAL)';
+  const NODE_COLOR = 'rgba(29, 78, 216, VAL)';
+  const LINE_COLOR = 'rgba(29, 78, 216, VAL)';
 
   let nodes = [];
 
@@ -109,9 +109,9 @@ navLinks.querySelectorAll('a').forEach(a => {
 
 // Typing animation
 const roles = [
+  'Data Engineer',
+  'Data Analyst',
   'Data Scientist',
-  'ML Engineer',
-  'AI Developer',
   'Gen AI Engineer'
 ];
 let roleIndex = 0;
